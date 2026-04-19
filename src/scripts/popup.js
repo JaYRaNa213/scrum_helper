@@ -732,6 +732,18 @@ document.addEventListener('DOMContentLoaded', () => {
 			});
 		});
 
+		const testProviderBtn = document.getElementById('testProviderBtn');
+		if (testProviderBtn) {
+			testProviderBtn.addEventListener('click', () => {
+				if (window.generateScrumFromProvider) {
+					window.generateScrumFromProvider();
+				} else {
+					console.error("Provider function not found");
+				}
+			});
+		}
+
+
 		copyBtn.addEventListener('click', function () {
 			const scrumReport = document.getElementById('scrumReport');
 			const tempDiv = document.createElement('div');
