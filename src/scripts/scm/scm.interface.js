@@ -1,3 +1,4 @@
+//it define the provide contract , it is interface 
 export class ISCMProvider {
   init(config) {}
 

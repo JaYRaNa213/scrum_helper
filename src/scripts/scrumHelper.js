@@ -2633,6 +2633,7 @@ function filterDataByRepos(data, selectedRepos) {
 }
 window.fetchUserRepositories = fetchUserRepositories;
 
+// SCM flow test ->testProviderBtn ->generateScrumFromProvider
 async function generateScrumFromProvider() {
   try {
     //  keeping  This — storage is critical
@@ -2668,7 +2669,7 @@ async function generateScrumFromProvider() {
 
     console.log("[NEW FLOW] Using CORE layer:", data);
 
-    //  Keeping existing renderer
+    //  Keeping existing renderer- SCM flow test -> renderer.js -> renderNormalizedScrum call - to render ui -> user get report
     renderNormalizedScrum(data, {
       startDate: activeStartDate,
       endDate: activeEndDate,

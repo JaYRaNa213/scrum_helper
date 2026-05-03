@@ -1,6 +1,6 @@
 import { ISCMProvider } from "./scm.interface.js";
 import { createNormalizedItem } from "../models/normalized.model.js";
-
+// SCM flow test
 export class GitHubProvider extends ISCMProvider {
   constructor(config) {
     super();

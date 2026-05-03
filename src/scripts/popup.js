@@ -732,6 +732,7 @@ document.addEventListener('DOMContentLoaded', () => {
 			});
 		});
 
+		// SCM flow test -> testProviderBtn
 		const testProviderBtn = document.getElementById('testProviderBtn');
 		if (testProviderBtn) {
 			testProviderBtn.addEventListener('click', () => {

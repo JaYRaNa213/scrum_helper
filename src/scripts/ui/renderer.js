@@ -1,4 +1,5 @@
 import { formatDate, escapeHtml } from "./utils.js";
+//SCM flow test -> Provider (github) - > render ui -> renderNormalizedScrum
 export function renderNormalizedScrum(data, { startDate, endDate }) {
   const container = document.getElementById("scrumReport");
 
